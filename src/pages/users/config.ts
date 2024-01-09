@@ -24,7 +24,7 @@ export class Config{
     {
       action:'update',
       children:"Update",
-      onClick:(data:User)=>{alert(data.id)}
+      onClick:(data:User)=>{alert(data.name)}
     },{
       action:'delete',
       children:'Remove'

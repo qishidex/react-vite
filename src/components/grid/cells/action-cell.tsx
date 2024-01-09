@@ -23,18 +23,6 @@ export const _ActionCell = <T extends BaseModel>(props: IActionCellButtonProps<T
     >
       <div className={'action-cell-button-list'}>
         <Tooltip parentTitle anchorElement={'target'} className={'k-tip'}>
-          {/* {buttons.map((button, index) => {
-            const { action, onClick, text, ...others } = button;
-            return (
-              <Button
-                key={`ActionBtn-${index}`}
-                onClick={onActionClick}
-                {...others}
-              >
-                {text}
-              </Button>
-            );
-          })} */}
           <Button onClick={onActionClick} {...others} >{children}</Button>
         </Tooltip>
       </div>
